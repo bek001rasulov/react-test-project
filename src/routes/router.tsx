@@ -1,10 +1,10 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Auth from "../pages/auth";
 
 export const router = createBrowserRouter(
     [
         {
-            path: "/",
+            path: "",
             element: <Auth/>,
         },
     ]
