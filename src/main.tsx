@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './fonts/fonts.css'
 import './index.css'
-import {createMuiTheme, ThemeProvider} from "@mui/material";
+import {createTheme, ThemeProvider} from "@mui/material";
 
 
-const theme = createMuiTheme({
+const theme = createTheme({
     typography: {
         fontFamily: [
             'Lexend',

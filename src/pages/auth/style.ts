@@ -14,9 +14,24 @@ export const AuthPaper = styled.div`
   text-align: center;
   max-width: 400px;
   background-color: white;
-  padding: 24px;
+  padding: 30px 24px;
   border-radius: 4px;
   box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.07);
+  form {
+    button{
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 16px;
+      padding-block: 11px;
+      line-height: 18px;
+      background-color: #0024DE;
+      box-shadow: none;
+      &:hover{
+        background-color: #08159F;
+        box-shadow: none;
+      }
+    }
+  }
 `
 
 export const TopTitle = styled.h2`
