@@ -19,7 +19,7 @@ const Auth = () => {
     return (
         <AuthContainer>
 
-            <AuthPaper>
+            <AuthPaper animate={{ y: [0, -15, 0] }} transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}>
                 <TopTitle>Welcome back!</TopTitle>
                 <Title>Login to your account</Title>
                 <form onSubmit={form.handleSubmit(onSubmit)}>

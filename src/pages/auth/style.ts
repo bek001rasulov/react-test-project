@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
-import bgImg from '../../assets/auth/auth-bg.svg'
+import bgImg from '../../assets/auth/auth-bg.svg';
+import {motion} from "framer-motion";
+import {keyframes} from "@emotion/react";
+
+const rotate = keyframes`
+    100%{
+      background-position: 25% 50%;
+    }
+`
 
 export const AuthContainer = styled.div`
   width: 100%;
@@ -8,9 +16,12 @@ export const AuthContainer = styled.div`
   place-content: center;
   //background-color: lightsteelblue;
   background-image: url(${bgImg});
+  background-size: auto;
+  background-repeat: no-repeat;
+  animation: ${rotate} 5s infinite alternate linear;
 `
 
-export const AuthPaper = styled.div`
+export const AuthPaper = styled(motion.div)`
   text-align: center;
   max-width: 400px;
   background-color: white;
